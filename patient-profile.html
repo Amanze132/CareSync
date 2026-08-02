@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>👤 Patient Profile</h1>
+
+<h2>Patient Information</h2>
+
+<p><strong>Patient ID:</strong> <span id="patientId"></span></p>
+
+<p><strong>Name:</strong> <span id="patientName"></span></p>
+
+<p><strong>Gender:</strong> <span id="patientGender"></span></p>
+
+<p><strong>Date of Birth:</strong> <span id="patientDob"></span></p>
+
+<p><strong>Phone:</strong> <span id="patientPhone"></span></p>
+
+<p><strong>Address:</strong> <span id="patientAddress"></span></p>
+<h2>❤️ Latest Vital Signs</h2>
+
+<p><strong>Temperature:</strong> <span id="latestTemperature">Not recorded</span></p>
+
+<p><strong>Pulse:</strong> <span id="latestPulse">Not recorded</span></p>
+
+<p><strong>Respiration:</strong> <span id="latestRespiration">Not recorded</span></p>
+
+<p><strong>Blood Pressure:</strong> <span id="latestBP">Not recorded</span></p>
+
+<p><strong>SpO₂:</strong> <span id="latestSpo2">Not recorded</span></p>
+
+<p><strong>Weight:</strong> <span id="latestWeight">Not recorded</span></p>
+
+<p><strong>Height:</strong> <span id="latestHeight">Not recorded</span></p>
+
+<hr>
+<h2>📝 Latest Nursing Note</h2>
+
+<p id="latestNursingNote">No nursing notes recorded.</p>
+<h2>💊 Latest Medication</h2>
+
+<p><strong>Drug:</strong> <span id="latestDrug">No medication recorded.</span></p>
+
+<p><strong>Dose:</strong> <span id="latestDose">-</span></p>
+
+<p><strong>Route:</strong> <span id="latestRoute">-</span></p>
+
+<p><strong>Time Given:</strong> <span id="latestTime">-</span></p>
+
+<p><strong>Remarks:</strong> <span id="latestRemarks">-</span></p>
+
+<hr>
+<h2>Clinical Modules</h2>
+
+<button onclick="window.location.href='vitals.html'">
+❤️ Vital Signs
+</button>
+
+<button onclick="window.location.href='nursing-notes.html'">
+📝 Nursing Notes
+</button>
+
+<button onclick="window.location.href='medication.html'">
+💊 Medication
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='patients.html'">
+⬅️ Back to Patient Records
+</button>
+
+</div>
+<script src="patient-profile.js"></script>
+</body>
+</html>

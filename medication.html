@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medication Administration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>💊 Medication Administration</h1>
+
+<input id="drugName" type="text" placeholder="Medication Name">
+
+<input id="dose" type="text" placeholder="Dose">
+
+<input id="route" type="text" placeholder="Route (Oral, IV, IM...)">
+
+<input id="timeGiven" type="time">
+
+<textarea id="remarks" placeholder="Remarks"></textarea>
+
+<br><br>
+
+<button id="saveMedication">
+Save Medication
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='dashboard.html'">
+Back to Dashboard
+</button>
+
+</div>
+
+<script src="medication.js"></script>
+
+</body>
+</html>

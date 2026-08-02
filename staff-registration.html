@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>👩‍⚕️ Staff Registration</h1>
+
+<input id="staffName" type="text" placeholder="Full Name">
+
+<input id="staffEmail" type="email" placeholder="Email Address">
+
+<input id="staffPhone" type="tel" placeholder="Phone Number">
+
+<select id="staffRole">
+<option value="">Select Role</option>
+<option>Nurse</option>
+<option>Doctor</option>
+<option>Administrator</option>
+<option>Pharmacist</option>
+<option>Laboratory Scientist</option>
+<option>Receptionist</option>
+</select>
+
+<input id="department" type="text" placeholder="Department">
+
+<input id="password" type="password" placeholder="Create Password">
+
+<button id="saveStaff">
+Register Staff
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='dashboard.html'">
+Back to Dashboard
+</button>
+
+</div>
+
+<script src="staff-registration.js"></script>
+
+</body>
+</html>
