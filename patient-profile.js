@@ -107,3 +107,27 @@ if (patientLabResults.length > 0) {
         latestLab.labRemarks;
 
 }
+const appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+
+const patientAppointments = appointments.filter(function(appointment) {
+    return appointment.patientIndex == index;
+});
+
+if (patientAppointments.length > 0) {
+
+    const latestAppointment =
+        patientAppointments[patientAppointments.length - 1];
+
+    document.getElementById("nextAppointmentDate").innerHTML =
+        latestAppointment.appointmentDate;
+
+    document.getElementById("nextAppointmentTime").innerHTML =
+        latestAppointment.appointmentTime;
+
+    document.getElementById("nextAppointmentProvider").innerHTML =
+        latestAppointment.providerName;
+
+    document.getElementById("nextAppointmentReason").innerHTML =
+        latestAppointment.appointmentReason;
+
+}
