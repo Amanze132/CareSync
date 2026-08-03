@@ -84,3 +84,26 @@ if (patientMedications.length > 0) {
         latestMedication.remarks;
 
 }
+const laboratoryRecords = JSON.parse(localStorage.getItem("laboratoryRecords")) || [];
+
+const patientLabResults = laboratoryRecords.filter(function(record) {
+    return record.patientIndex == index;
+});
+
+if (patientLabResults.length > 0) {
+
+    const latestLab = patientLabResults[patientLabResults.length - 1];
+
+    document.getElementById("latestTest").innerHTML =
+        latestLab.testName;
+
+    document.getElementById("latestResult").innerHTML =
+        latestLab.testResult;
+
+    document.getElementById("latestReference").innerHTML =
+        latestLab.referenceRange;
+
+    document.getElementById("latestLabRemarks").innerHTML =
+        latestLab.labRemarks;
+
+}
