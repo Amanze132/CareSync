@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Orders</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>👨‍⚕️ Doctor Orders</h1>
+
+<label>Order Date</label>
+<input type="date" id="orderDate">
+
+<label>Doctor's Name</label>
+<input type="text" id="doctorName" placeholder="Enter doctor's name">
+
+<label>Department</label>
+<input type="text" id="department" placeholder="e.g. Emergency, Medical Ward">
+
+<label>Order Type</label>
+<select id="orderType">
+<option>Medication</option>
+<option>Laboratory</option>
+<option>Radiology</option>
+<option>Nursing Care</option>
+<option>Procedure</option>
+<option>Diet</option>
+<option>Referral</option>
+<option>Other</option>
+</select>
+
+<label>Order Details</label>
+<textarea id="orderDetails" rows="5" placeholder="Enter doctor's order"></textarea>
+
+<label>Priority</label>
+<select id="priority">
+<option>Routine</option>
+<option>Urgent</option>
+<option>STAT</option>
+</select>
+
+<label>Status</label>
+<select id="status">
+<option>Pending</option>
+<option>In Progress</option>
+<option>Completed</option>
+<option>Cancelled</option>
+</select>
+
+<br><br>
+
+<button onclick="saveDoctorOrder()">
+💾 Save Order
+</button>
+
+<button onclick="window.location.href='patient-profile.html'">
+⬅️ Back to Patient Profile
+</button>
+
+<hr>
+
+<h2>Latest Doctor Order</h2>
+
+<p><strong>Date:</strong> <span id="displayDate">No order yet</span></p>
+
+<p><strong>Doctor:</strong> <span id="displayDoctor">-</span></p>
+
+<p><strong>Department:</strong> <span id="displayDepartment">-</span></p>
+
+<p><strong>Type:</strong> <span id="displayType">-</span></p>
+
+<p><strong>Order:</strong> <span id="displayOrder">-</span></p>
+
+<p><strong>Priority:</strong> <span id="displayPriority">-</span></p>
+
+<p><strong>Status:</strong> <span id="displayStatus">-</span></p>
+
+</div>
+
+<script src="doctor-orders.js"></script>
+
+</body>
+</html>

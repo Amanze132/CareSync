@@ -131,3 +131,24 @@ if (patientAppointments.length > 0) {
         latestAppointment.appointmentReason;
 
 }
+// Display latest doctor order
+
+const doctorOrder = JSON.parse(localStorage.getItem("doctorOrder"));
+
+if (doctorOrder) {
+
+    document.getElementById("latestOrderDate").textContent = doctorOrder.date;
+
+    document.getElementById("latestDoctor").textContent = doctorOrder.doctor;
+
+    document.getElementById("latestDepartment").textContent = doctorOrder.department;
+
+    document.getElementById("latestOrderType").textContent = doctorOrder.type;
+
+    document.getElementById("latestDoctorOrder").textContent = doctorOrder.order;
+
+    document.getElementById("latestPriority").textContent = doctorOrder.priority;
+
+    document.getElementById("latestStatus").textContent = doctorOrder.status;
+
+}
